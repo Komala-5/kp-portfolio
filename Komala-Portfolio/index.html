@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Komala P — Computer Science and Engineering student." />
+    <title>Komala P | Portfolio</title>
+
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Deferred script -->
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header id="page-header">
+      <nav aria-label="Main navigation">
+        <a href="#hero" class="logo" aria-label="Komala P — back to top">PORTFOLIO</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-label="Toggle navigation menu" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main aria-label="Main content">
+
+      <!-- Hero Section -->
+      <section id="hero" aria-labelledby="hero-name">
+        <div class="hero-content">
+          <!-- Profile photo (placeholder) -->
+          <div class="hero-photo-wrapper">
+            <img
+              class="hero-photo"
+              src="assets/images/kkp.jpeg"
+              alt="Photo of Komala P — add your photo to assets/images/kkp.jpeg"
+              width="220"
+              height="220"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Shown when image is missing -->
+            <div class="hero-photo-placeholder" aria-hidden="true" style="display:none;">
+              <span>📷</span>
+              <span>Add your photo here</span>
+              <small>assets/images/profile.jpg</small>
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="hero-text reveal">
+            <h1 id="hero-name">Komala P</h1>
+            <div class="typing-wrapper" aria-live="polite" aria-atomic="true">
+              <span id="typed-role" aria-label="Computer Science Student">Computer Science Student</span>
+            </div>
+            <p class="hero-bio">
+              3rd-year Computer Science &amp; Engineering student passionate about problem solving,
+              algorithms, and building practical software. Exploring everything from DSA to hardware.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary">Explore Projects</a>
+              <a href="#about" class="btn btn-outline">About Me</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+              <a
+                href="assets/documents/kp123.pdf"
+                class="btn btn-outline"
+                download
+                aria-label="Download Resume — file not yet available, replace assets/documents/kp123.pdf"
+              >Download Resume <small style="font-size:0.75em; opacity:0.7;"></small></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading" class="section-title reveal">About Me</h2>
+
+          <div class="about-layout">
+            <div class="about-main reveal">
+              <p class="about-bio">
+                Hi, I'm Komala P — a 3rd-year Computer Science and Engineering student
+                with a genuine passion for problem solving, algorithm design, and building
+                practical software. I enjoy breaking down complex problems, exploring new
+                technologies, and working on projects that have real-world purpose.
+              </p>
+              <p class="about-bio">
+                My interests span Data Structures and Algorithms, software development,
+                and web development. I'm also curious about hardware and embedded systems —
+                the Arduino rover I built is a good example of that. I believe in learning
+                by doing, and I'm always looking for my next challenge.
+              </p>
+              <!-- Edit the bio above with your own words whenever you're ready -->
+            </div>
+
+            <div class="about-sidebar reveal">
+              <div class="about-card">
+                <h3>Strengths</h3>
+                <ul class="about-list">
+                  <li>Logical and analytical thinking</li>
+                  <li>Curiosity and willingness to learn</li>
+                  <li>Persistence when solving problems</li>
+                  <li>Interest in exploring unfamiliar technologies</li>
+                  <li>Creative thinking and teamwork</li>
+                </ul>
+              </div>
+
+              <div class="about-card">
+                <h3>Area for Growth</h3>
+                <p>Building more hands-on experience with large, real-world software projects — something I'm actively working towards.</p>
+              </div>
+
+              <div class="about-card">
+                <h3>Languages Spoken</h3>
+                <ul class="languages-list">
+                  <li>English</li>
+                  <li>Kannada</li>
+                  <li>Hindi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" aria-labelledby="education-heading">
+        <div class="container">
+          <h2 id="education-heading" class="section-title reveal">Education</h2>
+          <div class="education-grid">
+
+            <!-- Card 1: BE CSE -->
+            <article
+              class="education-card reveal"
+              role="button"
+              tabindex="0"
+              aria-label="View details for BE in Computer Science and Engineering"
+              data-modal='{"title":"BE — Computer Science &amp; Engineering","institution":"Currently pursuing (Institution name to be added)","year":"3rd Year, 5th Semester","score":"CGPA: 8.29","details":"Currently in my 3rd year of a Bachelor of Engineering in Computer Science and Engineering. Maintaining a CGPA of 8.29. Core areas of study include data structures, algorithms, operating systems, computer networks, and software engineering. Actively exploring projects in web development, software development, and hardware systems alongside academics."}'
+            >
+              <p class="edu-degree">BE — Computer Science &amp; Engineering</p>
+              <p class="edu-institution">B.E. (CSE) · Currently Pursuing</p>
+              <p class="edu-meta">3rd Year, 5th Semester</p>
+              <span class="edu-score">CGPA: 8.29</span>
+              <p class="edu-view-hint">↗ Click to view details</p>
+            </article>
+
+            <!-- Card 2: 11th & 12th -->
+            <article
+              class="education-card reveal"
+              role="button"
+              tabindex="0"
+              aria-label="View details for 11th and 12th standard at Vidyaniketan PU College"
+              data-modal='{"title":"11th &amp; 12th Standard — PUC","institution":"Vidyaniketan PU College, Tumkur","year":"Pre-University (11th &amp; 12th)","score":"91%","details":"Completed Pre-University Course (PUC) at Vidyaniketan PU College, Tumkur, achieving 91%. Studied Physics, Chemistry, Mathematics, and Computer Science (PCMC stream). This strong foundation in science and mathematics influenced the decision to pursue Computer Science Engineering."}'
+            >
+              <p class="edu-degree">11th &amp; 12th Standard — PUC</p>
+              <p class="edu-institution">Vidyaniketan PU College, Tumkur</p>
+              <p class="edu-meta">Pre-University Course</p>
+              <span class="edu-score">91%</span>
+              <p class="edu-view-hint">↗ Click to view details</p>
+            </article>
+
+            <!-- Card 3: 10th -->
+            <article
+              class="education-card reveal"
+              role="button"
+              tabindex="0"
+              aria-label="View details for 10th standard at Kendriya Vidyalaya Tumkur"
+              data-modal='{"title":"10th Standard — CBSE","institution":"Kendriya Vidyalaya (KV), Tumkur","year":"Secondary School Certificate","score":"88%","details":"Completed 10th standard (CBSE board) at Kendriya Vidyalaya, Tumkur with 88%. Kendriya Vidyalaya schools follow the CBSE curriculum with a strong emphasis on science, mathematics, and languages. This schooling built the analytical foundation that continues to support academic work in Computer Science Engineering."}'
+            >
+              <p class="edu-degree">10th Standard — CBSE</p>
+              <p class="edu-institution">Kendriya Vidyalaya (KV), Tumkur</p>
+              <p class="edu-meta">Secondary School Certificate</p>
+              <span class="edu-score">88%</span>
+              <p class="edu-view-hint">↗ Click to view details</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading" class="section-title reveal">Skills</h2>
+          <div class="skills-grid">
+
+            <div class="skill-group reveal">
+              <h3>Programming Languages</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+              </div>
+            </div>
+
+            <div class="skill-group reveal">
+              <h3>Technical Interests &amp; Areas</h3>
+              <div class="skills-tags">
+                <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Algorithm Design</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Software Development</span>
+                <span class="skill-tag">Hardware &amp; Embedded Systems</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading" class="section-title reveal">Projects</h2>
+
+          <!-- Filter bar -->
+          <div class="filter-bar reveal" id="project-filter-bar" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn" data-filter="all" data-active aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="Software" aria-pressed="false">Software</button>
+            <button class="filter-btn" data-filter="Web" aria-pressed="false">Web</button>
+            <button class="filter-btn" data-filter="Hardware" aria-pressed="false">Hardware</button>
+            <button class="filter-btn" data-filter="Concepts" aria-pressed="false">Concepts</button>
+          </div>
+
+          <!-- Project cards grid -->
+          <div class="projects-grid" id="projects-grid">
+
+            <!-- Guardian Circle -->
+            <article
+              class="project-card reveal"
+              role="button"
+              tabindex="0"
+              data-category="Web"
+              aria-label="View details for Guardian Circle"
+              data-modal='{"title":"Guardian Circle","category":"Web","status":"Concept / Design Project","details":"Guardian Circle is a safety-focused website concept designed primarily to support personal safety, particularly for girls. The project explores how a simple, stress-friendly interface could provide quick access to emergency resources. This is a design and concept project — the emergency features described below are proposed interactions, not live systems.","features":"Emergency SOS interface concept. Emergency contact display. Information about nearby police stations (static/placeholder data). Quick access to safety resources and helpline numbers. Simple and calm UI designed for use in stressful situations.","technologies":["HTML","CSS","JavaScript"],"hasLiveUrl":false,"hasRepoUrl":false}'
+            >
+              <div class="project-header">
+                <h3>Guardian Circle</h3>
+                <span class="project-status-badge" data-status="concept">Concept</span>
+              </div>
+              <p class="project-description">A safety-focused website concept designed to support personal safety — featuring an emergency SOS interface, emergency contacts, and safety resources.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:auto">↗ Click for full details</p>
+            </article>
+
+            <!-- Arduino Rover -->
+            <article
+              class="project-card reveal"
+              role="button"
+              tabindex="0"
+              data-category="Hardware"
+              aria-label="View details for Arduino Obstacle-Avoidance Rover"
+              data-modal='{"title":"Arduino Obstacle-Avoidance Rover","category":"Hardware","status":"Completed Hardware Project","details":"A hardware exploration project built using an Arduino microcontroller. The rover uses an ultrasonic distance sensor to detect obstacles in its path. When an obstacle is detected within a set threshold distance, the rover stops, reverses slightly, and changes direction to avoid the obstacle. This project was my first hands-on experience with embedded systems, combining hardware wiring, sensor integration, and C/C++ programming on a microcontroller.","features":"Obstacle detection using ultrasonic sensor (HC-SR04). Autonomous direction change on obstacle detection. Motor driver integration (L298N or similar). Logic written in Arduino C/C++.","technologies":["Arduino","C/C++","Ultrasonic Sensor (HC-SR04)","Motor Driver"],"hasLiveUrl":false,"hasRepoUrl":false}'
+            >
+              <div class="project-header">
+                <h3>Arduino Obstacle-Avoidance Rover</h3>
+                <span class="project-status-badge" data-status="live">Completed</span>
+              </div>
+              <p class="project-description">A hardware project using Arduino that autonomously detects obstacles and changes direction — my first exploration into embedded systems and robotics.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">Embedded Systems</span>
+              </div>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:auto">↗ Click for full details</p>
+            </article>
+
+            <!-- CivicPulse -->
+            <article
+              class="project-card reveal"
+              role="button"
+              tabindex="0"
+              data-category="Concepts"
+              aria-label="View details for CivicPulse"
+              data-modal='{"title":"CivicPulse","category":"Concepts","status":"Future Concept","details":"CivicPulse is a future concept for an AI-powered civic complaint reporting and tracking platform. The idea is to allow citizens to easily report local civic issues (potholes, broken streetlights, waste management problems) and track their resolution status. AI would be used to categorise complaints and route them to the relevant municipal department automatically. This project is a concept only — it has not been built or deployed.","technologies":[],"hasLiveUrl":false,"hasRepoUrl":false}'
+            >
+              <div class="project-header">
+                <h3>CivicPulse</h3>
+                <span class="project-status-badge" data-status="future">Future Concept</span>
+              </div>
+              <p class="project-description">An AI-powered civic complaint reporting and tracking platform concept — allowing citizens to report and follow up on local issues efficiently.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Concept</span>
+              </div>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:auto">↗ Click for full details</p>
+            </article>
+
+            <!-- FocusBank -->
+            <article
+              class="project-card reveal"
+              role="button"
+              tabindex="0"
+              data-category="Concepts"
+              aria-label="View details for FocusBank"
+              data-modal='{"title":"FocusBank","category":"Concepts","status":"Future Concept","details":"FocusBank is a future concept for a combined finance and productivity app. The idea is to help users manage personal finances while also building good productivity habits — tracking spending, setting savings goals, and using focus timers or habit trackers alongside financial data. This project is a concept only — it has not been built or deployed.","technologies":[],"hasLiveUrl":false,"hasRepoUrl":false}'
+            >
+              <div class="project-header">
+                <h3>FocusBank</h3>
+                <span class="project-status-badge" data-status="future">Future Concept</span>
+              </div>
+              <p class="project-description">A concept for a finance and productivity app that combines personal finance tracking with habit and focus tools.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Concept</span>
+              </div>
+              <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:auto">↗ Click for full details</p>
+            </article>
+
+          </div><!-- /projects-grid -->
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" aria-labelledby="achievements-heading">
+        <div class="container">
+          <h2 id="achievements-heading" class="section-title reveal">Achievements &amp; Certifications</h2>
+          <p class="achievements-empty reveal">
+            Certifications and achievements will be listed here as they are earned.
+            Check back as learning continues!
+          </p>
+          <!--
+            HOW TO ADD ACHIEVEMENTS LATER:
+            Remove the <p class="achievements-empty"> above and add cards like:
+            <div class="education-grid">
+              <article class="achievement-card reveal">
+                <h3>Certification Name</h3>
+                <p>Issuing Organisation</p>
+                <p>Date: Month YYYY</p>
+              </article>
+            </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="section-title reveal">Get in Touch</h2>
+          <p style="color:var(--text-secondary);margin-bottom:2.5rem;max-width:500px" class="reveal">
+            Interested in collaborating, have a question, or just want to say hi?
+            Here's how to reach me.
+          </p>
+
+          <div class="contact-grid">
+
+            <!-- Email -->
+            <a
+              href="mailto:pkomala454@gmail.com"
+              class="contact-card reveal"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send email to Komala P"
+            >
+              <span class="contact-icon">✉️</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">pkomala454@gmail.com</span>
+              <span class="contact-note"></span>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/Komala-5"
+              class="contact-card reveal"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile — https://github.com/Komala-5"
+            >
+              <span class="contact-icon">💻</span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/Komala-5</span>
+              <span class="contact-note">← Komala-5</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/komala"
+              class="contact-card reveal"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile — komala"
+            >
+              <span class="contact-icon">🔗</span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/your-username</span>
+              <span class="contact-note"></span>
+            </a>
+            <!-- Phone -->
+<a
+  href="tel:+91 9986281054"
+  class="contact-card reveal"
+  aria-label="Call Komala P"
+>
+  <span class="contact-icon">📞</span>
+  <span class="contact-label">Phone</span>
+  <span class="contact-value">+91 9986281054</span>
+</a>
+
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Komala P. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- ===== SHARED MODAL ===== -->
+    <dialog
+      id="detail-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal-header">
+        <h2 id="modal-title">Details</h2>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected by JavaScript -->
+      </div>
+    </dialog>
+
+  </body>
+</html>
